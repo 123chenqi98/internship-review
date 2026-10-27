@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>陈琦｜实习核心产出复盘（0715 - 1101）</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  @page { size: A4; margin: 0; }
+  body {
+    font-family: "PingFang SC", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+    color: #000;
+    background: #f5f5f5;
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 10mm auto;
+    background: #fff;
+    padding: 15mm 18mm;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    border-left: 4px solid #000;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+  li {
+    font-size: 13px;
+    color: #333;
+    margin-left: 20px;
+    margin-bottom: 6px;
+  }
+  strong {
+    color: #000;
+    font-weight: 600;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 12px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f3f4f6;
+    font-weight: 600;
+  }
+  .meta {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>陈琦｜实习核心产出复盘（0715 - 1101）</h1>
+  <div class="meta">本文档为企业内部复盘材料脱敏版，敏感信息已处理，仅供求职展示参考。</div>
+  <h1>一、个人背景</h1>
+<p><ul><li><b>汇报人：</b><cite type="user" user-id="ou_1210bc29c3c1750d887819e8c1f98ef3" user-name="陈琦"></cite>  </li><li><b>在岗时长</b>：2026-07-15 至 2026-10-15（<b>约 90 天</b>）</li><li><b>团队：生活服务-东部大区-销售支持-销售支持C</b></li><li><b>工作内容：</b>负责浙中北区域日常数据支持（经营分析、过程数据跟进、激励看板维护、实时消息推送），并把重复的数据需求沉淀为固定模板和自动化链路。所有工作文档按分类汇总在个人传送门，可点击下方总览入口查看：[内部链接已脱敏]</li></ul></p>
+<p><strong>工作文档传送门总览：</strong></p>
+<p>函数导致数据全归零的bug，改成取底表最新日期的逻辑，批量修了大概8600个单元格。同时整理了拜访人效、零拜访占比、分时趋势这些指标，每天出异常清单。</td></tr><tr><td vertical-align="top">进阶阶段（Magibook 自动化）</td><td vertical-align="top"><b>后续优化动作：</b>用Magibook把拜访数据更新跑通了，做了三个版本——<b>日常版实时更新、周六版周末专推、还有杭一（杭一 CM）按他们要的口径定制的版本</b>。数据更新好之后通过MagiTeam自动推到CM管理群和BDM管理群，内容包括大组/小组的拜访人效预警、BDM人效低于阈值的清单，不用再每天手动发。</td></tr><tr><td vertical-align="top">覆盖规模</td><td vertical-align="top">整个链路覆盖大概95003条拜访流水、2827名在职销售。</td></tr><tr><td vertical-align="top">核心价值</td><td vertical-align="top">不用再每天手动导出录入了，数据更新更及时、口径也统一，管理者能更快看到拜访异常、及时干预。</td></tr></tbody></table></p>
+<h3><strong>产出价值：</strong>把拜访数据从每天手动导出整理，变成了Magibook自动更新+自动推群的固定链路，CM和BDM打开群就能看到人效异常和预警，过程管理有了统一的数据来源和直达管理者的触达方式。</h3>
+<h2>🧭  <strong>2、过程管理指标体系 · 7件套→9件套迭代</strong></h2>
+<p><strong>业务背景：</strong>区域需要一套过程指标来盯各团队的业务进度，但最早只有7个指标、放在飞书表格里，刷新慢、维度也不够用。</p>
+<p><strong>我的动作：</strong>先协助搭了早期的7项指标飞书表格看板，后来把指标从7个扩到9个，同时从飞书表格迁移到Aeolus看板，接上Magibook实时同步，支持AM/CM/BDM三个层级切换查看。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">阶段</th><th vertical-align="top">关键动作与交付</th></tr></thead><tbody><tr><td vertical-align="top">早期阶段</td><td vertical-align="top"><b>早期版本：</b>协助在飞书表格里利用<b>IDA协助搭建</b>了7项指标的全域达成看板，涵盖新开、有效新开、扫码核销GMV、扫码核销门店数这些核心指标。表格支持CM/BDM多层级的TOP/BOT排名，能看到完成率和差距。<br/><b>表格链接：</b>[内部链接已脱敏]</td></tr><tr><td vertical-align="top">进阶阶段<br/>（Magi看板迭代，升级为9件套）</td><td vertical-align="top"><b>升级到9件套：</b>在原来7个指标基础上加了<b>抖推腰绑定、有效激活扫码、出单宝开通采纳</b>这几个过程指标。同时把看板从<b>飞书表格 -- &gt; 前端看板</b>，数据源用<b>Magibook实时同步，刷新更快、口径也更统一</b>。看板支持AM/CM/BDM三个维度切换，不同层级的人能看各自关心的数据。<br/><b>看板链接：</b>[内部链接已脱敏]</td></tr><tr><td vertical-align="top">覆盖范围</td><td vertical-align="top">覆盖浙中北全部10个CM大组（杭一到金二），BD大概600人。</td></tr><tr><td vertical-align="top">数据来源<br/>与刷新</td><td vertical-align="top">数据来自区域&amp;战区达成、小组达成、BD达成，用Magibook实时同步更新。</td></tr></tbody></table></p>
+<h3>产出价值：把过程指标从7个扩到9个、从用IDA搭建飞书可视化多维表格 -- > 前端看板并接上Magibook实时同步，现在区域管理者能按AM/CM/BDM不同层级查看指标完成情况和排名，数据刷新更快、口径更统一。</h3>
+<h2>🏁 <strong>3、浙中北 BIGDAY 冲锋日运营 · 全流程闭环（周五、周六动作）</strong></h2>
+<p><strong>业务背景：</strong>浙中北每周末 / 节假日搞BIGDAY冲锋日，需要有人全程盯数据、发海报、做目标管理，但之前每场都要从头搞一遍，没有标准化流程。</p>
+<p><strong>我的动作：跟进闭环</strong>冲锋日的全流程——搭实时看板、收集下发目标、破峰了自动做海报推群，前后跑了12次，最后把整套流程整理成了SOP。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">规模与时间跨度</td><td vertical-align="top">从7月24日到8月29日，前后跟了12次冲锋日。</td></tr><tr><td vertical-align="top">① 冲锋看板搭建</td><td vertical-align="top">每次冲锋日前自己搭/迭代风神看板，同时看BDM和CM两个维度的实时达成。跑了几场之后把看板结构固定下来了，后面每场直接复用模板。</td></tr><tr><td vertical-align="top">② 目标下发与回收</td><td vertical-align="top">冲锋前帮着收集各业务大组的目标、录进去下发下去；冲锋结束后把数据收回来做达成结算，方便后面复盘。</td></tr><tr><td>③ 订阅管理与群推送</td><td></td></tr><tr><td vertical-align="top">④破峰海报制作与推送</td><td vertical-align="top">看板上看到哪个BDM综合完成率到100%了，就自动从飞书Wiki拉他的照片、合成破峰海报推到群里。12次冲锋日下来做了好几批海报，杭州、宁波、绍兴、金华都覆盖到了。</td></tr><tr><td vertical-align="top">看板与可视化链接</td><td vertical-align="top"><b>Aeolus 冲锋看板</b>：[内部链接已脱敏]<br/><b>破峰海报制作与推送：后续结合</b><b> Mira 帮我进行海报推送</b><b>，很大提升了效率，也不用盯看板啦</b></td></tr><tr><td vertical-align="top">SOP 沉淀</td><td vertical-align="top">把整套流程整理成了SOP文档，后面换人接手也能直接照着做：[内部链接已脱敏]</td></tr></tbody></table></p>
+<h3>产出价值：7-8月一个人跟完了浙中北四城12次冲锋日，从看板监控、目标下发回收到破峰海报自动推送全流程跑通，还整理了SOP，后面每场冲锋不用再从头摸索。</h3>
+<h2>🏙️ <strong>4、城市 BP 专项 · 绍兴一区激励看板（全链路搭建）</strong></h2>
+<p><strong>业务背景：</strong>绍兴城市BP提了个需求，要做绍兴一区的综合激励看板，把新开、有效新开、扫码、冲锋得分这些维度放一起排名。但风神平台跨数据集有权限限制，<strong>无法在同一个看板引用不同数据集的字段</strong>。</p>
+<p><strong>我的动作：</strong>自己想了个<strong>三层数据链路</strong>的办法绕过去 —— <strong>Magibook分别抓数、写到飞书表格中转、再回流到风神看板</strong>，最后把BD的四维综合排名跑通了，而且数据能自动更新。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">背景与挑战</td><td vertical-align="top"><b>业务方 BP</b><b>当时的业务指标背景、得分计算逻辑如下：</b></td></tr><tr><td vertical-align="top">技术方案<br/>（三层链路）</td><td vertical-align="top"><b>第一层·Magibook抓数：</b>给每个指标维度单独建一个Book——新开表现、有效新开表现、有效激活扫码表现、冲锋目标达成这些，分别从风神的可视化查询报表里把数据导出来。<br/><b>第二层·写到飞书表格：</b>用Python调LarkSDK把数据自动同步到飞书表格「绍兴一区激励看板-数据自动更新」里，表格一共8个Sheet，涵盖个人综合王者BD、全能战队BDM、新开表现、有效新开表现、有效激活扫码表现、冲锋日表现这些维度。<br/><b>第三层·回流到风神看板：</b>把飞书表格当成个人数据集，配了定时任务把数据回流到风神看板，这样就绕开了跨数据集的权限限制，看板数据能自动更新，不用人手动维护。</td></tr><tr><td vertical-align="top">产出成果</td><td vertical-align="top">覆盖绍兴一区31名BD，按新开数量、有效新开、有效激活扫码、冲锋得分四个维度算综合得分排名；Aeolus看板数据自动更新，不用人手动维护。</td></tr><tr><td vertical-align="top">链接（原样）</td><td vertical-align="top"><b>Aeolus 看板</b>：[内部链接已脱敏]<br/><b>Magibook实现相关链接：</b><br/>[内部链接已脱敏]<br/><b>飞书表格</b>：[内部链接已脱敏]</td></tr></tbody></table></p>
+<h3>产出价值：Aeolus跨数据集有权限限制、多维指标放不到一个看板里，我设计了"Magibook抓数→飞书表格中转→Aeolus回流"的三层链路绕过去，最终把绍兴一区BD的四维综合排名看板跑通了，而且数据自动更新不用人维护。</h3>
+<h2><strong>📊  5、浙中北暑期荣誉激励看板（0→1 全链路交付）</strong></h2>
+<p><strong>业务背景：</strong>暑期区域搞了个荣誉激励活动，覆盖BD/BDM/CM三类角色、8大荣誉类别、大概690名销售参赛，需要一个看板实时展示排名和激励进度。</p>
+<p><strong>我的动作：</strong>找业务方理清楚<strong>激励规则和排名逻辑、设计字段方案和看板终版复核</strong>，进行看板搭建，还额外做了个前端可视化版本，最后配上每日自动推送到全员群和BDM群。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">整体交付</td><td vertical-align="top">浙中北暑期荣誉激励看板一页纸如下图：</td></tr><tr><td vertical-align="top">字段方案与看板能力</td><td vertical-align="top">把需求文档仔细读了一遍，逐项核对指标口径和数据来源，来回也和业务方<b>对齐了好几轮字段定义</b>，最后把字段方案定下来。看板有2个Sheet，能看个人榜单和团队榜单，也支持下载原始数据，排名逻辑都能解释清楚。也和产品部门产品部门对<b>产品覆盖激励</b>这个板块进行了多轮的对接。</td></tr><tr><td vertical-align="top">看板链接</td><td vertical-align="top"><b>看板链接：</b>[内部链接已脱敏] <br/>风神看板搭好之后，利用<b>IDA爱搭</b>调了一下样式，让看板看起来更舒服、可读性更好。</td></tr><tr><td vertical-align="top">前端可视化版本</td><td vertical-align="top">风神看板交互不太灵活、查询不够方便，我就利用 <b>Aime 协助我做了个前端可视化版本</b>：[内部链接已脱敏]，能按人员/团队维度筛选查询，业务方自己就能查，不用每次找我要数。</td></tr><tr><td vertical-align="top">自动推送</td><td vertical-align="top">给全员群和BDM管理群分别配了不同的推送内容，每天早上10点自动推。我也一直在盯着推送状态，到现在每天都能准时发出去，各区域BDM都能看到当日荣誉榜单。</td></tr><tr><td vertical-align="top">迭代响应</td><td vertical-align="top">上线之后业务方有反馈我就第一时间跟进，数据口径有偏差的地方仔细排查修正，榜单逻辑和展示效果也一直在调，前后迭代了好几个版本，业务方反馈还不错。业务方业务方</td></tr></tbody></table></p>
+<h3>产出价值：从字段方案设计到双Sheet榜单搭建，再到风神看板和前端可视化版本，最后配上全员群和BDM群每日自动推送，上线后根据业务反馈持续迭代数据口径，激励榜单从要人手动维护变成了自动更新+主动推送到群。</h3>
+<h2><strong>📡  6、浙中北门店经营监控 · 实时数据推送（复现上海看板）</strong></h2>
+<p><strong>业务背景：</strong>上海区域已经有一套门店经营实时看板，浙中北的业务方浙中北业务方看到后希望也能有一套一样的，用来每天盯门店经营数据。</p>
+<p><strong>我的动作：</strong>把上海的方案快速复现到了浙中北——基于Magibook搭了数据链路，做了CM/BDM/总看板三个前端看板，覆盖核销GMV、有效新开、人均拜访这些指标，还配了异常预警和定时推群。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">需求背景</td><td vertical-align="top">上海那边已经有一套门店经营实时看板了，说浙中北也想要一套一样的，让我直接把上海的方案复现过来。</td></tr><tr><td vertical-align="top">方案落地</td><td vertical-align="top">基于Magibook自己搭了浙中北门店经营监控的实时推送链路，从数据接入、指标计算到前端可视化全流程跑通了。<br/><b>Magibook操作链接：</b>[内部链接已脱敏]</td></tr><tr><td vertical-align="top">前端可视化看板</td><td vertical-align="top">做了3个独立的前端看板，给不同管理层级用：<br/>CM管理群经营看板：[内部链接已脱敏]<br/>BDM管理群经营看板：[内部链接已脱敏]<br/>浙中北门店经营监控总看板：[内部链接已脱敏]</td></tr><tr><td vertical-align="top">看板核心指标</td><td vertical-align="top">指标包括核销GMV（日环比/周同比）、扫码GMV、有效新开、有效扫码、人均拜访次数，还有异常拜访预警（18点后自动触发），按CM/BDM层级展示排名和达标情况。</td></tr><tr><td vertical-align="top">推送机制</td><td vertical-align="top">配了定时推送到浙中北CM管理群和BDM管理群，每天自动播报。（注：这块还没正式上线使用）</td></tr></tbody></table></p>
+<h3><strong>产出价值：把上海的门店经营看板方案快速复现到了浙中北，基于Magibook做了CM/BDM/总看板三个分层前端看板，覆盖核销GMV、有效新开、人均拜访和异常拜访自动预警等指标，门店经营数据能实时监控并推到对应管理群。</strong></h3>
+<h2>🤝  <strong>7、杭州一区 BP 交接 · 管理周会更新与需求对接</strong></h2>
+<p><strong>业务背景：</strong>杭州一区是浙中北的核心城市大区，有独立的 BP 支持岗位和每周管理周会机制，需要专人跟进区域经营数据、更新周会汇报材料、对接业务方需求。近期原杭一 BP 交接，我承接了杭州一区的 BP 支持工作。</p>
+<p><strong>我的动作：</strong>接手后主要围绕三件事推进——<strong>每周更新杭州一区管理周会的数据内容和汇报材料</strong>，确保 CM/BDM 管理层及时看到区域经营进展；<strong>与杭一 CM持续对接杭州一区的业务需求</strong>，包括定制化拜访监控口径、看板调整等；同时<strong>梳理交接清单</strong>，把杭一现有的数据链路、看板资产和推送机制整理清楚，确保交接后业务不中断。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">交接背景与范围</td><td vertical-align="top">近期承接杭州一区的 BP 支持工作，交接范围包括杭一区域的日常数据支持、管理周会材料更新、业务需求对接，以及杭一版拜访监控等已有数据链路的维护。</td></tr><tr><td vertical-align="top">① 管理周会内容更新与汇报</td><td vertical-align="top">每周负责更新杭州一区管理周会的数据内容和汇报材料，梳理区域核心经营指标（过程指标、达成进度、异常项等），形成结构化的周会汇报，支撑 CM/BDM 管理层的周度复盘和决策。</td></tr><tr><td vertical-align="top">② 与杭一 CM需求对接讨论</td><td vertical-align="top">与杭一 CM持续对接杭州一区的业务需求，包括杭一版拜访监控的定制口径调整、数据看板的迭代优化等。每次对接后及时跟进落地，确保需求能快速响应。</td></tr><tr><td vertical-align="top">③ 交接资产梳理</td><td vertical-align="top">把杭一现有的数据链路、看板资产、自动推送机制逐项梳理清楚，形成交接清单，避免接手后出现"不知道数据从哪来、看板怎么维护"的情况，确保业务连续性。</td></tr></tbody></table></p>
+<h3><strong>产出价值：</strong>顺利承接杭州一区 BP 支持工作，每周稳定更新管理周会汇报材料，与杭州一区CM建立了常态化的需求对接机制，同时把杭一的数据资产和链路梳理成交接清单，确保区域数据支持在交接期间不中断、能持续迭代。</h3>
+<h2>📮  <strong>8、杭一管理群 · 看板稳定推送与定制化需求搭建</strong></h2>
+<p><strong>业务背景：</strong>杭州一区 BDM 管理群需要每日/定时接收各类经营与过程数据看板，支撑 BDM 团队日常管理和快速决策；同时杭一 CM 杭一 CM提出了定制化的月度新开和有效新开看板需求，需要专门搭建并纳入稳定推送链路。</p>
+<p><strong>我的动作：</strong>把杭一 BDM 管理群相关看板推送跑通并长期稳定维护，覆盖城市新开、城市经营日报、今日实时新开和有效新开-杭一、过程管理实时数据（Magibook）、BIGDAY 冲锋赛、拜访实时数据更新（杭一版）、月度新开和有效新开-杭一等多个看板，数据自动更新后定时推送到 BDM 管理群；其中"月度新开和有效新开-杭一（新）"是根据杭一 CM需求专门搭建的定制看板。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">推送看板清单</td><td vertical-align="top">杭一 BDM 管理群稳定推送的看板包括：城市｜新开看板、城市｜经营日报、今日实时新开和有效新开-杭一、过程管理-实时数据（Magibook定制）、BIGDAY 冲锋赛、拜访实时数据更新-实时（杭一）、月度新开和有效新开-杭一。各看板数据自动更新后定时推送到群里，BDM 打开群即可查看最新数据。</td></tr><tr><td vertical-align="top">① 定制化看板搭建</td><td vertical-align="top">根据杭一 CM 杭一 CM的需求，专门搭建了"月度新开和有效新开-杭一（新）"定制看板，围绕月度新开、有效新开等核心过程指标做专项展示，已纳入杭一 BDM 管理群的稳定推送链路。<br/>相关看板链接：<br/>· [内部链接已脱敏]<br/>· [内部链接已脱敏]<br/>· [内部链接已脱敏]<br/>· [内部链接已脱敏]</td></tr><tr><td vertical-align="top">② 日常答疑与需求支持</td><td vertical-align="top">日常响应 CM / BDM / BD 的数据问题和临时需求：指标口径对齐（如有效铺码、有效动销、新开王者、交易王者等排名口径与 CM 逐项确认）、业务方问"这个数在哪看"时协助取数和指引、看板问题排查与临时调整、冲锋/活动期间的实时数据支持。业务方有问题直接在群里 @我 或单聊，我及时响应并跟进落地，是区域管理者日常查数和用数的对接人。</td></tr></tbody></table></p>
+<h3><strong>产出价值：</strong>把杭一 BDM 管理群需要的多块经营和过程看板整合成稳定推送链路，覆盖城市新开、经营日报、实时新开、过程管理、冲锋赛、拜访监控等场景，BDM 打开群就能看到最新数据；同时响应杭一 CM的定制需求搭建了月度新开和有效新开-杭一看板，做到了区域通用推送与个性化定制需求的兼顾，杭一管理群的数据触达更及时、口径更统一。</h3>
+<h2>🎯  <strong>9、绩效板块（目标调整）与划户调整 · 全流程落地</strong></h2>
+<p><strong>业务背景：</strong>每个绩效周期区域都要做目标调整，涉及核销和广告两类目标——需要先基于最新 MTD 数据测算，组织 CM 填写调整后目标，再由我拆分到各 BDM（双计、单计、广告），最后收集齐全回填到 CRM；此外还有网格错位带来的划户调整，需要做网格纠偏并在 CRM 里操作。之前这类工作数据散、口径多、催办链条长，很容易逾期出错。</p>
+<p><strong>我的动作：</strong>从相关数据集拉取核销和广告的 MTD 切片数据，做公式计算、拆分合并，形成绩效切片达成表；组织 CM 在多维表格里填写调整后目标，我再把目标拆分到各 BDM，并在群里同步要求 BDM 基于 CM 调整后目标调整各自目标、管理 ddl；收集齐全后填报到 CRM 系统。同时承接划户调整，做网格纠偏和 CRM 操作，覆盖杭州一区的网格错位划户。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">整体流程链路</td><td vertical-align="top">① 从相关数据集拉取核销和广告 MTD 切片数据（广告最新/广告MTD消耗明细、每人单双计日均核销、切片看达成等）→ ② 做公式计算、拆分合并，形成绩效切片达成表 → ③ 组织 CM 填写调整后目标 → ④ 我再把目标拆分到各 BDM（双计、单计、广告）→ ⑤ 收集齐全后统一填报到 CRM 系统。</td></tr><tr><td vertical-align="top">数据协同与推送</td><td vertical-align="top">把 MTD 参考数据整理成多维表格推到群里，通知各 BDM 基于 CM 调整后的目标来调整 BD 各目标（双计、单计和广告），并明确 ddl、跟踪回收进度，确保调整在截止时间前收齐。</td></tr><tr><td vertical-align="top">划户调整</td><td vertical-align="top">针对网格错位问题做网格纠偏，并在 CRM 系统里完成划户操作，覆盖杭州一区等区域的网格错位划户，保证客户归属和业绩口径一致。</td></tr><tr><td vertical-align="top">最终产物</td><td vertical-align="top">整个目标调整与划户过程的数据和结果沉淀在多维表格中，可追溯、可复用：<br/>[内部链接已脱敏]</td></tr></tbody></table></p>
+<h3><strong>产出价值：</strong>把月度绩效目标调整从零散手动拉数、对口径、层层催 CM/BDM，跑成了"取数 → 计算拆分 → CM 调整 → 拆分到 BDM → 回填 CRM"的固定链路，同时覆盖划户调整的网格纠偏和 CRM 操作；目标调整过程有数据沉淀、口径统一、ddl 可控，不再每次从零开始。</h3>
+<h2>🏆  <strong>10、杭一月度激励 · 获奖名单看板与季度奖项/海报支持</strong></h2>
+<p><strong>业务背景：</strong>杭州一区每月/每季度都有激励奖项，覆盖新开、物料、工单、产品、交易等多个板块，设有新开王者、百单王者、百万新开、铺码王者、产品王者、交易王者、全能团队等奖项，需要按不同奖项板块分别出获奖名单，并整理季度奖项口径，最后根据 CM 需求做成海报用于群内表彰。</p>
+<p><strong>我的动作：</strong>根据不同奖项板块搭建对应的获奖名单看板（杭一BDM月度激励看板），把各奖项的排名、标签、达成情况实时算出来；协助整理 Q3 杭一季度奖项明细文档，对齐各奖项口径、名额和获奖标准；最终根据 CM 在群里的需求，用 AI 工具按奖项分别生成表彰海报。</p>
+<p><table><colgroup><col/><col/></colgroup><thead><tr><th vertical-align="top">维度</th><th vertical-align="top">内容</th></tr></thead><tbody><tr><td vertical-align="top">① 月度获奖名单看板</td><td vertical-align="top">按新开、物料、工单、产品、交易等不同奖项板块分别搭建对应获奖名单看板，实时计算各奖项排名、销售标签（新开王者/百万新开等）、新开门店数与有效新开门店数等，CM/BDM 打开即可看到当月各奖项谁能获奖。<br/>看板链接：[内部链接已脱敏]</td></tr><tr><td vertical-align="top">② 季度奖项明细整理</td><td vertical-align="top">协助整理 Q3 杭一季度奖项文档，逐一对齐各奖项的维度、板块、名额分配和获奖标准（如新开王者=新开排名*0.5+有效新开排名*0.5、铺码王者、产品王者、全能团队等），作为季度评奖和看板取数的口径依据。</td></tr><tr><td vertical-align="top">③ 按 CM 需求制作海报</td><td vertical-align="top">CM 在群里提出海报需求后，根据每个奖项（铺码王者、产品王者、全能团队、新开王者、新开百万等）分别生成对应表彰海报，直接可用于群内公示和表彰。</td></tr></tbody></table></p>
+<h3><strong>产出价值：</strong>杭一月度激励从"每个奖项手动算名单、对口径、做海报"变成了按奖项板块自动出获奖名单看板 + 季度奖项口径沉淀 + 按需生成表彰海报的闭环，CM 打开看板就能看谁获奖，要海报也能快速出，激励表彰更及时、口径更统一。</h3>
+<h2>⚙️ 11<strong>、AI Agent 工具矩阵应用 · 跨部门协作实践</strong></h2>
+<p><strong>业务背景：</strong>上面这些项目能跑通，很大程度上靠的是把各种AI工具串起来用。下面是我实习期间主要用到的工具和各自的用途。</p>
+<li><strong>Magibook</strong>：主要用来抓数据和自动更新，拜访数据实时同步、激励看板定时刷新、门店经营监控这些链路都是靠它跑的，不用再人工取数了</li>
+<li><strong>IDA</strong>：用来做看板和图表的样式优化，Aeolus看板的数据集配置、指标口径调试、可视化调整都会用到</li>
+<li><strong>Aime</strong>：用来部署前端页面，把数据做成能直接分享的前端可视化看板，业务方打开链接就能看，不用进Aeolus查（暑期激励看板、门店经营监控都做了前端版本）</li>
+<li><strong>Mira</strong>：用来做激励海报和数据推送，BIGDAY冲锋日的破峰海报批量制作、激励看板定时推群都是用它</li>
+<li><strong>Trae</strong>：用来写脚本和搭自动化流程，一些重复性的工作比如数据同步、表格处理都靠它提效</li>
+<li><strong>跨部门协作</strong>：8月参与了产品覆盖激励专项，跟产品、运营的同学一起对齐激励规则、提供数据支撑，算是在区域级项目里练了练横向协作</li>
+<li><strong>自建智能体：最新自己开发了个agent，主要用途是根据用户语义分析来进行sql的写入和从数据集取数，比如业务方想取个数，直接向我的agent提问，进行多轮问答就能得到想要的数据，目前已经部署和迭代更新ing（已经申请了风神看板的MCP），后续测试后可供部门业务需要。</strong></li>
+<p><strong>相关链接🔗：   https://bi-agent.chenqi2005.xin/</strong></p>
+<p>：</p>
+<p>[附件已脱敏]</p>
+</div>
+</body>
+</html>
